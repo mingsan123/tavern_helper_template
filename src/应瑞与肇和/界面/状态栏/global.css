@@ -1,35 +1,107 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  /* 主色 - 水墨东煌 */
-  --c-ink: #2c2c2c;
-  --c-ink-light: #5a5a5a;
-  --c-paper: #faf6f0;
-  --c-paper-dark: #ede4d6;
-  --c-border: #d4c8b6;
+  /* === 基底色（纸墨主题） === */
+  --c-ink: #2a2218;
+  --c-ink-soft: #4a3f32;
+  --c-ink-muted: #7a7265;
+  --c-paper: #faf7f0;
+  --c-paper-deep: #f0e9d8;
+  --c-paper-dark: #e3d9c4;
+  --c-surface: rgba(255, 252, 245, 0.72);
+  --c-surface-raised: rgba(255, 255, 252, 0.92);
+  --c-border: #d9ceb8;
+  --c-border-light: #e8dfce;
 
-  /* 应瑞色 - 黛蓝紫 */
-  --c-yingrui: #5b5fa8;
-  --c-yingrui-light: #e8e6f5;
-  --c-yingrui-gradient: linear-gradient(135deg, #5b5fa8, #8b6baa);
+  /* === 应瑞色系（黛蓝紫） === */
+  --c-yingrui: #4e5194;
+  --c-yingrui-deep: #3b3e7a;
+  --c-yingrui-surface: #eceaf7;
+  --c-yingrui-surface-deep: #dddaf0;
+  --c-yingrui-gradient: linear-gradient(135deg, #4e5194 0%, #7b5ea7 50%, #a870c0 100%);
+  --c-yingrui-glow: rgba(78, 81, 148, 0.18);
 
-  /* 肇和色 - 胭脂红 */
-  --c-zhaohe: #c4545a;
-  --c-zhaohe-light: #fbe8e8;
-  --c-zhaohe-gradient: linear-gradient(135deg, #c4545a, #e8876b);
+  /* === 肇和色系（胭脂红） === */
+  --c-zhaohe: #b8444a;
+  --c-zhaohe-deep: #8e3136;
+  --c-zhaohe-surface: #f9eaea;
+  --c-zhaohe-surface-deep: #f3d8d8;
+  --c-zhaohe-gradient: linear-gradient(135deg, #b8444a 0%, #d4695f 50%, #e89878 100%);
+  --c-zhaohe-glow: rgba(184, 68, 74, 0.18);
 
-  /* 功能色 */
-  --c-gold: #c9a84c;
-  --c-gold-light: #f5ecd2;
-  --c-affection: #e8876b;
-  --c-oath: #c9a84c;
-  --c-success: #7b9c6e;
-  --c-text-muted: #9b9080;
-  --c-surface: rgba(255, 255, 255, 0.6);
+  /* === 功能色 === */
+  --c-gold: #b89438;
+  --c-gold-deep: #8a6c28;
+  --c-gold-surface: #faf3e0;
+  --c-gold-gradient: linear-gradient(135deg, #b89438, #d4b85c, #e8d08a);
+  --c-success: #5a8a6a;
+  --c-success-surface: #e8f2ea;
 
-  --font-main: 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  /* === 阶段色标 === */
+  --c-stage-stranger: #9b9890;
+  --c-stage-familiar: #6a9b6a;
+  --c-stage-crush: #d47878;
+  --c-stage-lover: #d49468;
+  --c-stage-oath: #b89438;
+
+  /* === 排版 === */
+  --font-main: 'Microsoft YaHei', 'Noto Serif SC', 'Source Han Serif SC', 'SimSun', serif;
+  --font-display: 'Noto Serif SC', 'Source Han Serif SC', 'SimSun', 'KaiTi', serif;
+  --font-mono: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  --font-size-xs: 9px;
+  --font-size-sm: 10px;
+  --font-size-base: 11px;
+  --font-size-md: 12px;
+  --font-size-lg: 14px;
+  --font-size-xl: 16px;
+
+  /* === 圆角 === */
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  /* === 阴影 === */
+  --shadow-card: 0 1px 3px rgba(42, 34, 24, 0.08), 0 1px 6px rgba(42, 34, 24, 0.04);
+  --shadow-raised: 0 2px 8px rgba(42, 34, 24, 0.10), 0 4px 16px rgba(42, 34, 24, 0.05);
+
+  /* === 过渡 === */
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 600ms;
+}
+
+/* === 全局基础 === */
+body {
+  font-family: var(--font-main);
+  color: var(--c-ink);
+  background: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === 自定义滚动条 === */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-border);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-ink-muted);
 }
