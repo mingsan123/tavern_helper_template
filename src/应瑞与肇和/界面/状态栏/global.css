@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* 主色 - 水墨东煌 */
+  --c-ink: #2c2c2c;
+  --c-ink-light: #5a5a5a;
+  --c-paper: #faf6f0;
+  --c-paper-dark: #ede4d6;
+  --c-border: #d4c8b6;
+
+  /* 应瑞色 - 黛蓝紫 */
+  --c-yingrui: #5b5fa8;
+  --c-yingrui-light: #e8e6f5;
+  --c-yingrui-gradient: linear-gradient(135deg, #5b5fa8, #8b6baa);
+
+  /* 肇和色 - 胭脂红 */
+  --c-zhaohe: #c4545a;
+  --c-zhaohe-light: #fbe8e8;
+  --c-zhaohe-gradient: linear-gradient(135deg, #c4545a, #e8876b);
+
+  /* 功能色 */
+  --c-gold: #c9a84c;
+  --c-gold-light: #f5ecd2;
+  --c-affection: #e8876b;
+  --c-oath: #c9a84c;
+  --c-success: #7b9c6e;
+  --c-text-muted: #9b9080;
+  --c-surface: rgba(255, 255, 255, 0.6);
+
+  --font-main: 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+}
