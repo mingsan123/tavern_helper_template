@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "default": {},
+  "type": "object",
+  "properties": {
+    "系统": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "当前场景": {
+          "default": "港区办公室",
+          "type": "string",
+          "enum": [
+            "港区办公室",
+            "东煌宿舍",
+            "海滨",
+            "训练场",
+            "永恒之心舰内"
+          ]
+        },
+        "项圈状态": {
+          "default": "指挥官",
+          "type": "string",
+          "enum": [
+            "指挥官",
+            "永恒之心"
+          ]
+        }
+      }
+    },
+    "应瑞": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "好感度": {
+          "default": 50,
+          "type": "number"
+        },
+        "关系阶段": {
+          "default": "初识",
+          "type": "string"
+        },
+        "誓约": {
+          "default": false,
+          "type": "boolean"
+        },
+        "当前衣着": {
+          "default": "改良露肩白色紧身内衣 + 紫色宽袖刺绣外褂 + 白色百褶短裙 + 纯白过膝长筒袜",
+          "type": "string"
+        }
+      }
+    },
+    "肇和": {
+      "default": {},
+      "type": "object",
+      "properties": {
+        "好感度": {
+          "default": 50,
+          "type": "number"
+        },
+        "关系阶段": {
+          "default": "初识",
+          "type": "string"
+        },
+        "誓约": {
+          "default": false,
+          "type": "boolean"
+        },
+        "当前衣着": {
+          "default": "红白相间旗袍领短款上衣 + 白色多层蓬松短裙 + 白色丝质长筒袜 + 红色描金高跟鞋",
+          "type": "string"
+        }
+      }
+    }
+  }
+}
