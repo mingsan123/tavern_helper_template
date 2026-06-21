@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "系统": {
+      "type": "object",
+      "properties": {
+        "项圈状态": {
+          "type": "string",
+          "enum": [
+            "佩戴",
+            "摘下"
+          ]
+        },
+        "当前身份": {
+          "type": "string",
+          "enum": [
+            "指挥官",
+            "永恒之心"
+          ]
+        },
+        "当前时间": {
+          "type": "string"
+        },
+        "当前地点": {
+          "type": "string"
+        },
+        "在场舰娘": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "项圈状态",
+        "当前身份",
+        "当前时间",
+        "当前地点",
+        "在场舰娘"
+      ]
+    },
+    "永恒之心": {
+      "type": "object",
+      "properties": {
+        "淫乱度": {
+          "type": "number"
+        },
+        "兴奋度": {
+          "type": "number"
+        },
+        "攻守值": {
+          "type": "number"
+        },
+        "身体适应度": {
+          "type": "number"
+        },
+        "当前阶段": {
+          "type": "string",
+          "enum": [
+            "清纯期",
+            "觉醒期",
+            "纵欲期"
+          ]
+        },
+        "衣着": {
+          "type": "object",
+          "properties": {
+            "上衣": {
+              "type": "string"
+            },
+            "下衣": {
+              "type": "string"
+            },
+            "内衣": {
+              "type": "string"
+            },
+            "内裤": {
+              "type": "string"
+            },
+            "颈部": {
+              "type": "string"
+            },
+            "手部": {
+              "type": "string"
+            },
+            "腿部": {
+              "type": "string"
+            },
+            "脚部": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "上衣",
+            "下衣",
+            "内衣",
+            "内裤",
+            "颈部",
+            "手部",
+            "腿部",
+            "脚部"
+          ]
+        },
+        "身体状态": {
+          "type": "object",
+          "properties": {
+            "胸部": {
+              "type": "string"
+            },
+            "小穴": {
+              "type": "string"
+            },
+            "肛门": {
+              "type": "string"
+            },
+            "臀部": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "胸部",
+            "小穴",
+            "肛门",
+            "臀部"
+          ]
+        },
+        "心理想法": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "淫乱度",
+        "兴奋度",
+        "攻守值",
+        "身体适应度",
+        "当前阶段",
+        "衣着",
+        "身体状态",
+        "心理想法"
+      ]
+    }
+  },
+  "required": [
+    "系统",
+    "永恒之心"
+  ]
+}
