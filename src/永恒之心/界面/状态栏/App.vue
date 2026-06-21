@@ -52,22 +52,6 @@ const active_tab = useLocalStorage<string | null>('status_bar:active_tab', null)
 
 <style lang="scss" scoped>
 .card {
-  /* CSS变量 - 星月主题 */
-  --c-primary: #4a7fb5;
-  --c-accent: #9b6ec6;
-  --c-surface: #f0f4f8;
-  --c-card: #ffffff;
-  --c-text: #2c3e50;
-  --c-text-muted: #7f8c9b;
-  --c-border: #d1dce6;
-  --c-danger: #e74c3c;
-  --c-indicator-low: #6cb4ee;
-  --c-indicator-mid: #c084fc;
-  --c-indicator-high: #f472b6;
-  --c-status-active: #4a7fb5;
-  --c-status-inactive: #7f8c9b;
-  --font-main: 'Microsoft YaHei', 'PingFang SC', sans-serif;
-
   width: 100%;
   max-width: 720px;
   background-color: var(--c-card);
@@ -88,7 +72,6 @@ const active_tab = useLocalStorage<string | null>('status_bar:active_tab', null)
 
 .content-area {
   padding: 10px 12px;
-  min-height: 0;
 }
 
 .tab-pane {

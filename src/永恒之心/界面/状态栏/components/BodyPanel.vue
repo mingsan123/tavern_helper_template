@@ -75,23 +75,23 @@ function body_class(value: string): string {
 }
 
 .state-initial {
-  background: rgba(108, 180, 238, 0.08);
-  border-color: rgba(108, 180, 238, 0.25);
+  background: var(--c-body-initial);
+  border-color: var(--c-body-initial-border);
 }
 
 .state-active {
-  background: rgba(192, 132, 252, 0.08);
-  border-color: rgba(192, 132, 252, 0.25);
+  background: var(--c-body-active);
+  border-color: var(--c-body-active-border);
 }
 
 .state-intense {
-  background: rgba(244, 114, 182, 0.08);
-  border-color: rgba(244, 114, 182, 0.25);
+  background: var(--c-body-intense);
+  border-color: var(--c-body-intense-border);
 }
 
 .state-developed {
-  background: rgba(155, 110, 198, 0.08);
-  border-color: rgba(155, 110, 198, 0.25);
+  background: var(--c-body-developed);
+  border-color: var(--c-body-developed-border);
 }
 
 @media (max-width: 500px) {
