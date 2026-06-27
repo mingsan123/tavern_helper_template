@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* === 星月主题基础色 === */
+  --c-primary: #4a7fb5;
+  --c-accent: #9b6ec6;
+  --c-surface: #f0f4f8;
+  --c-card: #ffffff;
+  --c-text: #2c3e50;
+  --c-text-muted: #7f8c9b;
+  --c-border: #d1dce6;
+  --c-danger: #e74c3c;
+
+  /* === 阶段指示色 === */
+  --c-indicator-low: #6cb4ee;
+  --c-indicator-mid: #c084fc;
+  --c-indicator-high: #f472b6;
+  --c-indicator-max: #f97316;
+
+  /* === 状态色 === */
+  --c-status-active: #4a7fb5;
+  --c-status-inactive: #7f8c9b;
+
+  /* === 身体状态色 === */
+  --c-body-normal: rgba(108, 180, 238, 0.08);
+  --c-body-normal-border: rgba(108, 180, 238, 0.25);
+  --c-body-active: rgba(192, 132, 252, 0.08);
+  --c-body-active-border: rgba(192, 132, 252, 0.25);
+  --c-body-intense: rgba(244, 114, 182, 0.08);
+  --c-body-intense-border: rgba(244, 114, 182, 0.25);
+  --c-body-developed: rgba(155, 110, 198, 0.08);
+  --c-body-developed-border: rgba(155, 110, 198, 0.25);
+  --c-body-initial: rgba(108, 180, 238, 0.08);
+  --c-body-initial-border: rgba(108, 180, 238, 0.25);
+
+  /* === 排版 === */
+  --font-main: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--c-text);
+  background: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-border);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-text-muted);
+}
